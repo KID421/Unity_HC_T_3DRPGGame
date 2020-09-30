@@ -15,10 +15,8 @@ ScriptsOnlyBuild:
     UnityEditor.Graphs.dll:
     - UnityEditor.Graphs.AnimationBlendTree.Graph
     - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.AnyStateNode
     - UnityEditor.Graphs.AnimationStateMachine.Graph
     - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.StateNode
     - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
@@ -85,37 +83,37 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11266}
+      Script: {instanceID: 11244}
     - Class: 114
-      Script: {instanceID: 11282}
+      Script: {instanceID: 11268}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11284}
     - Class: 114
-      Script: {instanceID: 11406}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11408}
     - Class: 114
-      Script: {instanceID: 11762}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11764}
     - Class: 114
-      Script: {instanceID: 12220}
+      Script: {instanceID: 11830}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12514}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12528}
+      Script: {instanceID: 12516}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12530}
     - Class: 114
-      Script: {instanceID: 12880}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 12882}
     - Class: 114
-      Script: {instanceID: 13096}
+      Script: {instanceID: 13074}
     - Class: 114
-      Script: {instanceID: 100796}
+      Script: {instanceID: 13098}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -150,6 +148,8 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 238
       Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
     "Assets/\u5834\u666F/\u9078\u55AE.unity":
     - Class: 1
       Script: {instanceID: 0}
@@ -169,6 +169,10 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 81
       Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
     - Class: 84
       Script: {instanceID: 0}
     - Class: 89
@@ -186,21 +190,21 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 11226}
     - Class: 114
-      Script: {instanceID: 11396}
+      Script: {instanceID: 11398}
     - Class: 114
-      Script: {instanceID: 11438}
+      Script: {instanceID: 11440}
     - Class: 114
-      Script: {instanceID: 11552}
+      Script: {instanceID: 11554}
     - Class: 114
-      Script: {instanceID: 11828}
+      Script: {instanceID: 11830}
     - Class: 114
-      Script: {instanceID: 12220}
+      Script: {instanceID: 12222}
     - Class: 114
-      Script: {instanceID: 12242}
+      Script: {instanceID: 12244}
     - Class: 114
-      Script: {instanceID: 12708}
+      Script: {instanceID: 12710}
     - Class: 114
-      Script: {instanceID: 13072}
+      Script: {instanceID: 13074}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -234,6 +238,12 @@ ScriptsOnlyBuild:
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: WFX_Demo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneControl
   - hash:
       serializedVersion: 2
       Hash: c42672c997f8be6b1aa86a927ebea785
@@ -806,7 +816,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: b126c1d12e1abb700d8a95fe2f71e8a3
+      Hash: be9fdc36a50a634d57e7091bc57e9f00
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Player
@@ -828,14 +838,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: SceneControl
   platform: 5
   scenePathNames:
   - "Assets/\u5834\u666F/\u9078\u55AE.unity"
   - "Assets/\u5834\u666F/\u904A\u6232\u5834\u666F.unity"
-  playerPath: E:/KID/Unity_HC_T_3DRPGGame/EXE/3DRPGGame.exe
+  playerPath: "E:/KID/Unity_HC_T_3DRPGGame/EXE/KID  \u53AD\u4E16\u5C0F\u85CD.exe"

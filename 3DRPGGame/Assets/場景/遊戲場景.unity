@@ -28682,7 +28682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172667528146053}
   m_LocalRotation: {x: 0, y: 1, z: -0, w: -0.0000001872535}
-  m_LocalPosition: {x: -4.39, y: 0, z: -43.502815}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 2669706723511537512}
@@ -32027,10 +32027,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3.5
   turn: 5
-  attack: 500
-  hp: 81
+  attack: 50
+  hp: 150
   mp: 50
   soundProp: {fileID: 8300000, guid: 07a704990f5a72340af51149e6cebe1e, type: 3}
+  soundMeteor: {fileID: 8300000, guid: 25047fcd0178ed7418b43e4e7fa6f0d8, type: 3}
+  soundAttack: {fileID: 8300000, guid: 34f849a5dc73a0942a3ae2f161a01f9f, type: 3}
+  soundHit: {fileID: 8300000, guid: b4b51ff133ffd4a44b27cef12f305f89, type: 3}
   textMission: {fileID: 979151407}
   barHp: {fileID: 1524107739}
   barMp: {fileID: 2007764317}
@@ -32042,9 +32045,9 @@ MonoBehaviour:
   damageRock: 100
   restoreMp: 5
   restoreHp: 10
-  stop: 0
   final: {fileID: 88957564}
   textFinalTitle: {fileID: 1212837036}
+  stop: 0
 --- !u!82 &8296172667528146057
 AudioSource:
   m_ObjectHideFlags: 0

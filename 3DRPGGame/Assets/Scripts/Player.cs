@@ -15,8 +15,11 @@ public class Player : MonoBehaviour
     public float hp = 250;
     [Header("魔力"), Range(0, 500)]
     public float mp = 50;
-    [Header("吃道具音效")]
+    [Header("音效")]
     public AudioClip soundProp;
+    public AudioClip soundMeteor;
+    public AudioClip soundAttack;
+    public AudioClip soundHit;
     [Header("任務數量")]
     public Text textMission;
     [Header("吧條")]
@@ -33,6 +36,9 @@ public class Player : MonoBehaviour
     public float restoreMp = 5;
     [Header("回血量 / 每秒")]
     public float restoreHp = 10;
+    [Header("遊戲結束畫面")]
+    public CanvasGroup final;
+    public Text textFinalTitle;
 
     private int lv = 1;              // 等級
     private float exp;               // 目前經驗值
@@ -103,6 +109,7 @@ public class Player : MonoBehaviour
     /// <param name="direction">擊退方向</param>
     public void Hit(float damage, Transform direction)
     {
+        aud.PlayOneShot(soundHit);
         hp -= damage;
         rig.AddForce(direction.forward * 100 + direction.up * 150);
 
@@ -123,10 +130,6 @@ public class Player : MonoBehaviour
 
         StartCoroutine(ShowFinal());                            // 啟動結束畫面協成
     }
-
-    [Header("遊戲結束畫面")]
-    public CanvasGroup final;
-    public Text textFinalTitle;
 
     /// <summary>
     /// 顯示結束畫面
@@ -155,6 +158,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            aud.PlayOneShot(soundAttack);
             ani.SetTrigger("攻擊觸發");
         }
     }
@@ -203,6 +207,7 @@ public class Player : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Mouse1) && mp >= costRock)                     // 如果 按下 右鍵 並且 魔力 >= 技能消耗
         {
+            aud.PlayOneShot(soundMeteor);
             ani.SetTrigger("技能觸發");                                              // 播放動畫
             Instantiate(rock, pointRock.position, pointRock.rotation);              // 生成(物件，座標，角度)
             mp -= costRock;                                                         // 扣除消耗量
