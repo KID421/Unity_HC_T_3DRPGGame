@@ -122,6 +122,8 @@ public class Enemy : MonoBehaviour
 
     private void Update()
     {
+        if (ani.GetCurrentAnimatorStateInfo(0).IsName("攻擊")) return;
+
         Move();
     }
 
